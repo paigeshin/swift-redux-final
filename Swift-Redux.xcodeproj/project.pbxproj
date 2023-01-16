@@ -1,0 +1,568 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C4A757062974D3090051A813 /* Swift_ReduxApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A757052974D3090051A813 /* Swift_ReduxApp.swift */; };
+		C4A757082974D3090051A813 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A757072974D3090051A813 /* ContentView.swift */; };
+		C4A7570A2974D3090051A813 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4A757092974D3090051A813 /* Assets.xcassets */; };
+		C4A7570D2974D3090051A813 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4A7570C2974D3090051A813 /* Preview Assets.xcassets */; };
+		C4A757402974D31A0051A813 /* WeightState.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A757162974D31A0051A813 /* WeightState.swift */; };
+		C4A757412974D31A0051A813 /* weightMiddleware.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A757172974D31A0051A813 /* weightMiddleware.swift */; };
+		C4A757422974D31A0051A813 /* weightReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A757182974D31A0051A813 /* weightReducer.swift */; };
+		C4A757432974D31A0051A813 /* WeightAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A757192974D31A0051A813 /* WeightAction.swift */; };
+		C4A757442974D31A0051A813 /* authMiddleware.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A7571B2974D31A0051A813 /* authMiddleware.swift */; };
+		C4A757452974D31A0051A813 /* AuthActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A7571C2974D31A0051A813 /* AuthActions.swift */; };
+		C4A757462974D31A0051A813 /* AuthState.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A7571D2974D31A0051A813 /* AuthState.swift */; };
+		C4A757472974D31A0051A813 /* authReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A7571E2974D31A0051A813 /* authReducer.swift */; };
+		C4A757482974D31A0051A813 /* HealthKitState.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A757202974D31A0051A813 /* HealthKitState.swift */; };
+		C4A757492974D31A0051A813 /* HealthKitAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A757212974D31A0051A813 /* HealthKitAction.swift */; };
+		C4A7574A2974D31A0051A813 /* healthkitMiddleware.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A757222974D31A0051A813 /* healthkitMiddleware.swift */; };
+		C4A7574B2974D31A0051A813 /* healthkitReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A757232974D31A0051A813 /* healthkitReducer.swift */; };
+		C4A7574C2974D31A0051A813 /* ReminderAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A757252974D31A0051A813 /* ReminderAction.swift */; };
+		C4A7574D2974D31A0051A813 /* ReminderState.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A757262974D31A0051A813 /* ReminderState.swift */; };
+		C4A7574E2974D31A0051A813 /* reminderMiddleware.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A757272974D31A0051A813 /* reminderMiddleware.swift */; };
+		C4A7574F2974D31A0051A813 /* reminderReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A757282974D31A0051A813 /* reminderReducer.swift */; };
+		C4A757502974D31A0051A813 /* MessageState.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A7572A2974D31A0051A813 /* MessageState.swift */; };
+		C4A757512974D31A0051A813 /* MessageAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A7572B2974D31A0051A813 /* MessageAction.swift */; };
+		C4A757522974D31A0051A813 /* messageReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A7572C2974D31A0051A813 /* messageReducer.swift */; };
+		C4A757532974D31A0051A813 /* messageMiddleware.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A7572D2974D31A0051A813 /* messageMiddleware.swift */; };
+		C4A757542974D31A0051A813 /* ReminderMessageState.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A7572F2974D31A0051A813 /* ReminderMessageState.swift */; };
+		C4A757552974D31A0051A813 /* ReminderMessageAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A757302974D31A0051A813 /* ReminderMessageAction.swift */; };
+		C4A757562974D31A0051A813 /* reminderMessageMiddleware.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A757312974D31A0051A813 /* reminderMessageMiddleware.swift */; };
+		C4A757572974D31A0051A813 /* reminderMessageReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A757322974D31A0051A813 /* reminderMessageReducer.swift */; };
+		C4A757582974D31A0051A813 /* iapReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A757342974D31A0051A813 /* iapReducer.swift */; };
+		C4A757592974D31A0051A813 /* IAPState.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A757352974D31A0051A813 /* IAPState.swift */; };
+		C4A7575A2974D31A0051A813 /* iapMiddleware.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A757362974D31A0051A813 /* iapMiddleware.swift */; };
+		C4A7575B2974D31A0051A813 /* IAPActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A757372974D31A0051A813 /* IAPActions.swift */; };
+		C4A7575C2974D31A0051A813 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A757392974D31A0051A813 /* AppState.swift */; };
+		C4A7575D2974D31A0051A813 /* appReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A7573A2974D31A0051A813 /* appReducer.swift */; };
+		C4A7575E2974D31A0051A813 /* AppAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A7573B2974D31A0051A813 /* AppAction.swift */; };
+		C4A7575F2974D31A0051A813 /* StoreFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A7573C2974D31A0051A813 /* StoreFactory.swift */; };
+		C4A757602974D31A0051A813 /* logMiddleware.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A7573E2974D31A0051A813 /* logMiddleware.swift */; };
+		C4A757612974D31A0051A813 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A7573F2974D31A0051A813 /* Store.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		C4A757022974D3090051A813 /* Swift-Redux.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Swift-Redux.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C4A757052974D3090051A813 /* Swift_ReduxApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swift_ReduxApp.swift; sourceTree = "<group>"; };
+		C4A757072974D3090051A813 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		C4A757092974D3090051A813 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C4A7570C2974D3090051A813 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C4A757162974D31A0051A813 /* WeightState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeightState.swift; sourceTree = "<group>"; };
+		C4A757172974D31A0051A813 /* weightMiddleware.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = weightMiddleware.swift; sourceTree = "<group>"; };
+		C4A757182974D31A0051A813 /* weightReducer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = weightReducer.swift; sourceTree = "<group>"; };
+		C4A757192974D31A0051A813 /* WeightAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeightAction.swift; sourceTree = "<group>"; };
+		C4A7571B2974D31A0051A813 /* authMiddleware.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = authMiddleware.swift; sourceTree = "<group>"; };
+		C4A7571C2974D31A0051A813 /* AuthActions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthActions.swift; sourceTree = "<group>"; };
+		C4A7571D2974D31A0051A813 /* AuthState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthState.swift; sourceTree = "<group>"; };
+		C4A7571E2974D31A0051A813 /* authReducer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = authReducer.swift; sourceTree = "<group>"; };
+		C4A757202974D31A0051A813 /* HealthKitState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HealthKitState.swift; sourceTree = "<group>"; };
+		C4A757212974D31A0051A813 /* HealthKitAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HealthKitAction.swift; sourceTree = "<group>"; };
+		C4A757222974D31A0051A813 /* healthkitMiddleware.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = healthkitMiddleware.swift; sourceTree = "<group>"; };
+		C4A757232974D31A0051A813 /* healthkitReducer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = healthkitReducer.swift; sourceTree = "<group>"; };
+		C4A757252974D31A0051A813 /* ReminderAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReminderAction.swift; sourceTree = "<group>"; };
+		C4A757262974D31A0051A813 /* ReminderState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReminderState.swift; sourceTree = "<group>"; };
+		C4A757272974D31A0051A813 /* reminderMiddleware.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = reminderMiddleware.swift; sourceTree = "<group>"; };
+		C4A757282974D31A0051A813 /* reminderReducer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = reminderReducer.swift; sourceTree = "<group>"; };
+		C4A7572A2974D31A0051A813 /* MessageState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageState.swift; sourceTree = "<group>"; };
+		C4A7572B2974D31A0051A813 /* MessageAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageAction.swift; sourceTree = "<group>"; };
+		C4A7572C2974D31A0051A813 /* messageReducer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = messageReducer.swift; sourceTree = "<group>"; };
+		C4A7572D2974D31A0051A813 /* messageMiddleware.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = messageMiddleware.swift; sourceTree = "<group>"; };
+		C4A7572F2974D31A0051A813 /* ReminderMessageState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReminderMessageState.swift; sourceTree = "<group>"; };
+		C4A757302974D31A0051A813 /* ReminderMessageAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReminderMessageAction.swift; sourceTree = "<group>"; };
+		C4A757312974D31A0051A813 /* reminderMessageMiddleware.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = reminderMessageMiddleware.swift; sourceTree = "<group>"; };
+		C4A757322974D31A0051A813 /* reminderMessageReducer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = reminderMessageReducer.swift; sourceTree = "<group>"; };
+		C4A757342974D31A0051A813 /* iapReducer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = iapReducer.swift; sourceTree = "<group>"; };
+		C4A757352974D31A0051A813 /* IAPState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IAPState.swift; sourceTree = "<group>"; };
+		C4A757362974D31A0051A813 /* iapMiddleware.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = iapMiddleware.swift; sourceTree = "<group>"; };
+		C4A757372974D31A0051A813 /* IAPActions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IAPActions.swift; sourceTree = "<group>"; };
+		C4A757392974D31A0051A813 /* AppState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		C4A7573A2974D31A0051A813 /* appReducer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = appReducer.swift; sourceTree = "<group>"; };
+		C4A7573B2974D31A0051A813 /* AppAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppAction.swift; sourceTree = "<group>"; };
+		C4A7573C2974D31A0051A813 /* StoreFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoreFactory.swift; sourceTree = "<group>"; };
+		C4A7573E2974D31A0051A813 /* logMiddleware.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = logMiddleware.swift; sourceTree = "<group>"; };
+		C4A7573F2974D31A0051A813 /* Store.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C4A756FF2974D3090051A813 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C4A756F92974D3090051A813 = {
+			isa = PBXGroup;
+			children = (
+				C4A757042974D3090051A813 /* Swift-Redux */,
+				C4A757032974D3090051A813 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C4A757032974D3090051A813 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C4A757022974D3090051A813 /* Swift-Redux.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C4A757042974D3090051A813 /* Swift-Redux */ = {
+			isa = PBXGroup;
+			children = (
+				C4A757052974D3090051A813 /* Swift_ReduxApp.swift */,
+				C4A757072974D3090051A813 /* ContentView.swift */,
+				C4A757132974D31A0051A813 /* redux */,
+				C4A757092974D3090051A813 /* Assets.xcassets */,
+				C4A7570B2974D3090051A813 /* Preview Content */,
+			);
+			path = "Swift-Redux";
+			sourceTree = "<group>";
+		};
+		C4A7570B2974D3090051A813 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				C4A7570C2974D3090051A813 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C4A757132974D31A0051A813 /* redux */ = {
+			isa = PBXGroup;
+			children = (
+				C4A757142974D31A0051A813 /* domains */,
+				C4A757382974D31A0051A813 /* app */,
+				C4A7573C2974D31A0051A813 /* StoreFactory.swift */,
+				C4A7573D2974D31A0051A813 /* middlewares */,
+				C4A7573F2974D31A0051A813 /* Store.swift */,
+			);
+			path = redux;
+			sourceTree = "<group>";
+		};
+		C4A757142974D31A0051A813 /* domains */ = {
+			isa = PBXGroup;
+			children = (
+				C4A757152974D31A0051A813 /* weight */,
+				C4A7571A2974D31A0051A813 /* auth */,
+				C4A7571F2974D31A0051A813 /* healthkit */,
+				C4A757242974D31A0051A813 /* reminder */,
+				C4A757292974D31A0051A813 /* message */,
+				C4A7572E2974D31A0051A813 /* reminder-message */,
+				C4A757332974D31A0051A813 /* iap */,
+			);
+			path = domains;
+			sourceTree = "<group>";
+		};
+		C4A757152974D31A0051A813 /* weight */ = {
+			isa = PBXGroup;
+			children = (
+				C4A757162974D31A0051A813 /* WeightState.swift */,
+				C4A757172974D31A0051A813 /* weightMiddleware.swift */,
+				C4A757182974D31A0051A813 /* weightReducer.swift */,
+				C4A757192974D31A0051A813 /* WeightAction.swift */,
+			);
+			path = weight;
+			sourceTree = "<group>";
+		};
+		C4A7571A2974D31A0051A813 /* auth */ = {
+			isa = PBXGroup;
+			children = (
+				C4A7571B2974D31A0051A813 /* authMiddleware.swift */,
+				C4A7571C2974D31A0051A813 /* AuthActions.swift */,
+				C4A7571D2974D31A0051A813 /* AuthState.swift */,
+				C4A7571E2974D31A0051A813 /* authReducer.swift */,
+			);
+			path = auth;
+			sourceTree = "<group>";
+		};
+		C4A7571F2974D31A0051A813 /* healthkit */ = {
+			isa = PBXGroup;
+			children = (
+				C4A757202974D31A0051A813 /* HealthKitState.swift */,
+				C4A757212974D31A0051A813 /* HealthKitAction.swift */,
+				C4A757222974D31A0051A813 /* healthkitMiddleware.swift */,
+				C4A757232974D31A0051A813 /* healthkitReducer.swift */,
+			);
+			path = healthkit;
+			sourceTree = "<group>";
+		};
+		C4A757242974D31A0051A813 /* reminder */ = {
+			isa = PBXGroup;
+			children = (
+				C4A757252974D31A0051A813 /* ReminderAction.swift */,
+				C4A757262974D31A0051A813 /* ReminderState.swift */,
+				C4A757272974D31A0051A813 /* reminderMiddleware.swift */,
+				C4A757282974D31A0051A813 /* reminderReducer.swift */,
+			);
+			path = reminder;
+			sourceTree = "<group>";
+		};
+		C4A757292974D31A0051A813 /* message */ = {
+			isa = PBXGroup;
+			children = (
+				C4A7572A2974D31A0051A813 /* MessageState.swift */,
+				C4A7572B2974D31A0051A813 /* MessageAction.swift */,
+				C4A7572C2974D31A0051A813 /* messageReducer.swift */,
+				C4A7572D2974D31A0051A813 /* messageMiddleware.swift */,
+			);
+			path = message;
+			sourceTree = "<group>";
+		};
+		C4A7572E2974D31A0051A813 /* reminder-message */ = {
+			isa = PBXGroup;
+			children = (
+				C4A7572F2974D31A0051A813 /* ReminderMessageState.swift */,
+				C4A757302974D31A0051A813 /* ReminderMessageAction.swift */,
+				C4A757312974D31A0051A813 /* reminderMessageMiddleware.swift */,
+				C4A757322974D31A0051A813 /* reminderMessageReducer.swift */,
+			);
+			path = "reminder-message";
+			sourceTree = "<group>";
+		};
+		C4A757332974D31A0051A813 /* iap */ = {
+			isa = PBXGroup;
+			children = (
+				C4A757342974D31A0051A813 /* iapReducer.swift */,
+				C4A757352974D31A0051A813 /* IAPState.swift */,
+				C4A757362974D31A0051A813 /* iapMiddleware.swift */,
+				C4A757372974D31A0051A813 /* IAPActions.swift */,
+			);
+			path = iap;
+			sourceTree = "<group>";
+		};
+		C4A757382974D31A0051A813 /* app */ = {
+			isa = PBXGroup;
+			children = (
+				C4A757392974D31A0051A813 /* AppState.swift */,
+				C4A7573A2974D31A0051A813 /* appReducer.swift */,
+				C4A7573B2974D31A0051A813 /* AppAction.swift */,
+			);
+			path = app;
+			sourceTree = "<group>";
+		};
+		C4A7573D2974D31A0051A813 /* middlewares */ = {
+			isa = PBXGroup;
+			children = (
+				C4A7573E2974D31A0051A813 /* logMiddleware.swift */,
+			);
+			path = middlewares;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C4A757012974D3090051A813 /* Swift-Redux */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C4A757102974D3090051A813 /* Build configuration list for PBXNativeTarget "Swift-Redux" */;
+			buildPhases = (
+				C4A756FE2974D3090051A813 /* Sources */,
+				C4A756FF2974D3090051A813 /* Frameworks */,
+				C4A757002974D3090051A813 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Swift-Redux";
+			productName = "Swift-Redux";
+			productReference = C4A757022974D3090051A813 /* Swift-Redux.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C4A756FA2974D3090051A813 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					C4A757012974D3090051A813 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+				};
+			};
+			buildConfigurationList = C4A756FD2974D3090051A813 /* Build configuration list for PBXProject "Swift-Redux" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C4A756F92974D3090051A813;
+			productRefGroup = C4A757032974D3090051A813 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C4A757012974D3090051A813 /* Swift-Redux */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C4A757002974D3090051A813 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4A7570D2974D3090051A813 /* Preview Assets.xcassets in Resources */,
+				C4A7570A2974D3090051A813 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C4A756FE2974D3090051A813 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4A757592974D31A0051A813 /* IAPState.swift in Sources */,
+				C4A757442974D31A0051A813 /* authMiddleware.swift in Sources */,
+				C4A757512974D31A0051A813 /* MessageAction.swift in Sources */,
+				C4A757612974D31A0051A813 /* Store.swift in Sources */,
+				C4A757482974D31A0051A813 /* HealthKitState.swift in Sources */,
+				C4A7575E2974D31A0051A813 /* AppAction.swift in Sources */,
+				C4A757462974D31A0051A813 /* AuthState.swift in Sources */,
+				C4A757082974D3090051A813 /* ContentView.swift in Sources */,
+				C4A757492974D31A0051A813 /* HealthKitAction.swift in Sources */,
+				C4A757562974D31A0051A813 /* reminderMessageMiddleware.swift in Sources */,
+				C4A7574D2974D31A0051A813 /* ReminderState.swift in Sources */,
+				C4A7575F2974D31A0051A813 /* StoreFactory.swift in Sources */,
+				C4A757402974D31A0051A813 /* WeightState.swift in Sources */,
+				C4A7574E2974D31A0051A813 /* reminderMiddleware.swift in Sources */,
+				C4A757062974D3090051A813 /* Swift_ReduxApp.swift in Sources */,
+				C4A757412974D31A0051A813 /* weightMiddleware.swift in Sources */,
+				C4A7575C2974D31A0051A813 /* AppState.swift in Sources */,
+				C4A757522974D31A0051A813 /* messageReducer.swift in Sources */,
+				C4A7575B2974D31A0051A813 /* IAPActions.swift in Sources */,
+				C4A757472974D31A0051A813 /* authReducer.swift in Sources */,
+				C4A7575A2974D31A0051A813 /* iapMiddleware.swift in Sources */,
+				C4A757602974D31A0051A813 /* logMiddleware.swift in Sources */,
+				C4A7574C2974D31A0051A813 /* ReminderAction.swift in Sources */,
+				C4A757542974D31A0051A813 /* ReminderMessageState.swift in Sources */,
+				C4A757572974D31A0051A813 /* reminderMessageReducer.swift in Sources */,
+				C4A757552974D31A0051A813 /* ReminderMessageAction.swift in Sources */,
+				C4A7575D2974D31A0051A813 /* appReducer.swift in Sources */,
+				C4A7574B2974D31A0051A813 /* healthkitReducer.swift in Sources */,
+				C4A757532974D31A0051A813 /* messageMiddleware.swift in Sources */,
+				C4A7574A2974D31A0051A813 /* healthkitMiddleware.swift in Sources */,
+				C4A7574F2974D31A0051A813 /* reminderReducer.swift in Sources */,
+				C4A757422974D31A0051A813 /* weightReducer.swift in Sources */,
+				C4A757432974D31A0051A813 /* WeightAction.swift in Sources */,
+				C4A757452974D31A0051A813 /* AuthActions.swift in Sources */,
+				C4A757502974D31A0051A813 /* MessageState.swift in Sources */,
+				C4A757582974D31A0051A813 /* iapReducer.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		C4A7570E2974D3090051A813 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C4A7570F2974D3090051A813 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C4A757112974D3090051A813 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Swift-Redux/Preview Content\"";
+				DEVELOPMENT_TEAM = 35W7TZ9DUM;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.paigesoftware.Swift-Redux";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C4A757122974D3090051A813 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Swift-Redux/Preview Content\"";
+				DEVELOPMENT_TEAM = 35W7TZ9DUM;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.paigesoftware.Swift-Redux";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C4A756FD2974D3090051A813 /* Build configuration list for PBXProject "Swift-Redux" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C4A7570E2974D3090051A813 /* Debug */,
+				C4A7570F2974D3090051A813 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C4A757102974D3090051A813 /* Build configuration list for PBXNativeTarget "Swift-Redux" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C4A757112974D3090051A813 /* Debug */,
+				C4A757122974D3090051A813 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C4A756FA2974D3090051A813 /* Project object */;
+}
